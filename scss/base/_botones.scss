@@ -1,0 +1,49 @@
+// main: ../estilos.scss
+.btn {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-align: center;
+  color:#fff;
+  white-space: normal;
+  word-break: word-break;
+  display:inline-block;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  &.btn-borde-blanco {
+    border: 2px solid #fff;
+
+    &:hover {
+      background: #fff;
+      color: $color-gris
+    }
+  }
+  &.btn-rojo {
+    background: $color-rojo;
+
+    &:hover {
+      background: darken($color-rojo,7%);
+    }
+  }
+  &.btn-azul {
+    background: $color-azul;
+
+    &:hover {
+      background: darken($color-azul,7%);
+    }
+  }
+  &.redondeado {
+    border-radius: 40px;
+    @include sombra1;
+  }
+  &.btn-big {
+    padding: 24px 50px;
+    font-size: 1.05em;
+    @include respond-to(1500px){
+      padding: 16px 40px;
+    }
+  }
+}

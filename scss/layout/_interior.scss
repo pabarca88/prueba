@@ -1,0 +1,310 @@
+// main: ../estilos.scss
+.s-interior{
+  padding-top: 260px;
+  @include respond-to(1500px){
+    padding-top: 190px;
+  }
+  @include respond-to(991px){
+    padding-top: 140px;
+  }
+}
+.bread {
+  font-size: 1em;
+  color: #A2A2A2;
+  margin-bottom: 40px;
+  a {
+    color: #A2A2A2;
+    text-decoration: underline;
+    &:hover {
+      color: darken(#a2a2a2,20%);
+    }
+  }
+  i {
+    font-size: .7em;
+    display: inline-block;
+    margin: 0 6px;
+  }
+  &.gris {
+    background: #F0F3F5;
+    padding: 12px 0 14px;
+    font-size: .9em;
+    margin-bottom: 0;
+  }
+  @include respond-to(1500px){
+    margin-bottom: 30px;
+  }
+}
+.texto-izq {
+  padding-right: 60px;
+  @include respond-to(1500px){
+    padding-right: 30px;
+  }
+  @include respond-to(991px){
+    padding-right: 0px;
+  }
+}
+.w-links {
+  margin-top: 40px;
+  a {
+    display: block;
+    color: $color-azul;
+    font-size: 1em;
+    margin-bottom: 17px;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.87em;
+      height: auto;
+      margin-right: 5px;
+    }
+  }
+}
+
+.box-servicio {
+  figure {
+    img {
+      width: 100%;
+    }
+  }
+  .texto {
+    padding: 30px 50px;
+    h4 {
+      font-size: 1.5em;
+      color: $color-azul-oscuro;
+      margin: 10px 0 20px;
+    }
+    p {
+
+    }
+  }
+  @include respond-to(1500px) {
+    .texto {
+      padding: 10px 30px;
+    }
+  }
+  @include respond-to(640px) {
+    .texto {
+      padding: 10px 20px;
+    }
+  }
+}
+
+
+.banner-interior{
+  margin-top: 140px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  @include respond-to(1500px) {
+    margin-top: 106px;
+    .texto {
+      padding: 10px 30px;
+    }
+  }
+  h1{
+    font-size: 2.3em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    @include flex-center;
+  }
+}
+p.bajada {
+  font-size: 1.08em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.box-criterio {
+  text-align: center;
+  padding: 0 10px;
+  figure {
+    img {
+      height: 3.6em;
+      width: auto;
+    }
+  }
+  h4 {
+    color: $color-azul;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  p {
+    line-height: 1.3em;
+  }
+  @include respond-to(991px) {
+    margin-bottom: 40px;
+  }
+}
+
+.cuadro-azul {
+  border: 3px solid $color-azul;
+  padding: 20px 24px;
+  margin-bottom: 4.4em;
+  p {
+    color: $color-azul;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-bottom: 0;
+  }
+}
+p.baj {
+  margin-bottom: 40px;
+}
+
+.box-actividad {
+  background: #fff;
+  padding: 2em;
+  text-align: left;
+  margin-bottom: 26px;
+  @include sombra2;
+  figure {
+    padding-top: 5px;
+    img {
+      width: 4.5em;
+      height: auto;
+    }
+  }
+  .texto-act {
+    padding-left: 1.2em;
+    p {
+      margin-bottom: 8px;
+      line-height: 1.2em;
+      b {}
+    }
+  }
+  @include respond-to(480px){
+    padding: 20px;
+    flex-wrap: wrap;
+
+    .texto-act {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+.w-botones {
+  width: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+  a {
+    display: block;
+    margin-bottom: 40px;
+    @include sombra1;
+  }
+}
+
+.box-legal {
+  border: 1px solid #CFCFCF;
+  @include sombra3;
+  display: block;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+  figure {
+    img {
+      width: 5.2em;
+      height: auto;
+    }
+  }
+  h4 {
+    font-size: 1.16em;
+    color: $color-azul;
+    margin: 10px 0;
+  }
+  p {
+    color: $color-gris;
+  }
+  &:hover {
+    background: #f8f8f8;
+  }
+  @include respond-to(991px) {
+    margin-bottom: 20px;
+  }
+}
+
+.banner-contacto {
+  @include bg-cover;
+  display: block;
+  background-image: url('../images/bg-contacto.jpg');
+  .wrap {
+    padding-top: $p-4;
+    padding-bottom: $p-4;
+  }
+  i {
+    color: #fff;
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2.1em;
+    color: #fff;
+    margin: 10px 0;
+  }
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.menu-tabs {
+  @include flex-between;
+  padding: 20px 2em 30px;
+  a {
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #545454;
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    padding: 20px 0;
+    font-weight: 500;
+    position: relative;
+    height: 4em;
+    @include flex-center;
+    &:after {
+      content:"";
+      height: 2px;
+      background: #B3C2D0;
+      display: block;
+      margin: 14px auto 0;
+      width: 100px;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    &.activo {
+      color: $color-azul;
+      &:after {
+        background: $color-azul;
+      }
+    }
+  }
+  @include respond-to(640px) {
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    padding: 20px;
+    a {
+      width: 100%;
+    }
+  }
+}
+
+.wrap-panel {
+  padding: 0 2em;
+  .item-panel {
+    display: none;
+    &#panel-1 {
+      display: block;
+    }
+  }
+  @include respond-to(640px) {
+    padding: 0 0px;
+  }
+}

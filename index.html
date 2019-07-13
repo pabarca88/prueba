@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Servicio Civil</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"
+        async>
+<link rel="stylesheet" href="css/fonts.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+<link rel="stylesheet" href="css/tiny-slider.css" type="text/css">
+<link rel="stylesheet" href="css/animate.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css" type="text/css">
+<link rel="stylesheet" href="css/estilos.css" type="text/css">
+</head>
+<body>
+
+<header class="default">
+  <div class="wrap flex-top flex-between">
+    <a href="#" class="logo">
+      <img src="images/logo.svg" alt="Servicio Civil">
+    </a>
+    <div class="head" id="navHead">
+      <div class="head-top">
+        <a href="#"><i class="fas fa-database"></i> Datos Abiertos</a>
+        <a href="#"><i class="fas fa-key"></i> Acceso Sistemas</a>
+        <a href="#"><i class="far fa-comment"></i> Atención Ciudadana</a>
+        <div class="redes-top">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="ver-redes">
+          <i class="fas fa-share-alt"></i>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="activo">Quiénes somos</a></li>
+          <li><a href="#">Qué hacemos</a></li>
+          <li><a href="#">Consejo ADP</a></li>
+          <li><a href="#">Instructivos y Normativas</a></li>
+          <li><a href="#">Noticias</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="btn-menu close" id="btn-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section class="banner-home">
+  <div class="carrusel">
+    <div class="carrusel-slide">
+      <div class="item">
+        <div class="wrap">
+          <div class="bg-image" style="background-image: url('images/slide1.jpg');"></div>
+          <div class="texto-slide">
+            <h5 class="wow fadeInUp2">Destacado</h5>
+            <h3 class="wow fadeInUp2" data-wow-delay="0.2s"><span>Por su compromiso y vocación de</span> <b>servicio</b> felicitamos a los ganadores del Premio Yo Sirvo a mi País.</h3>
+            <img src="images/flecha-der-blanco.svg" alt="" class="wow fadeInLeft" data-wow-delay="1s">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="wrap">
+          <div class="bg-image" style="background-image: url('images/slide1.jpg');"></div>
+          <div class="texto-slide">
+            <h5 class="wow fadeInUp2">Destacado</h5>
+            <h3 class="wow fadeInUp2" data-wow-delay="0.2s"><span>Por su compromiso y vocación de</span> <b>servicio</b> felicitamos a los ganadores del Premio Yo Sirvo a mi País.</h3>
+            <img src="images/flecha-der-blanco.svg" alt="" class="wow fadeInLeft" data-wow-delay="1s">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="caja-trabajar">
+    <img src="images/ic-maletin.svg" alt="">
+    <p>¿Quieres trabajar en el Estado?</p>
+  </a>
+  <div class="scroll" onClick="scrollToDiv()">
+    <img src="images/scroll.svg" alt="">
+  </div>
+</section>
+
+<!--section class="p-2 quienes-somos" id="quienes-somos">
+  <div class="wrap flex-between-top">
+    <figure class="marco col-mb-1">
+      <img class="lazyload" data-src="images/img1.jpg" alt="">
+    </figure>
+    <div class="texto col-mb-1">
+      <h1 class="t-5">Servicio Civil</h1>
+      <h2 class="t-2">¿Quiénes <span class="azul">Somos?</span></h2>
+
+      <p>El Servicio Civil es un servicio público descentralizado, que se relaciona con el Presidente de la República a través del Ministerio de Hacienda. Tiene como misión “fortalecer la función pública y contribuir a la modernización del Estado, a través de la implementación de políticas de gestión y desarrollo de personas y altos directivos, para promover un mejor empleo público y un Estado al servicio de los ciudadanos”.</p>
+
+      <p>La calidad y el buen desempeño de las personas que trabajan en el sector público son fundamentales para cumplir con éxito los objetivos estratégicos de toda organización y, por ende, del Estado en su conjunto, sirviendo con mayor calidad y eficiencia a la ciudadanía.</p>
+    </div>
+  </div>
+</section-->
+
+<section class="bg-celeste p-3" id="noticias">
+  <div class="wrap">
+    <h2 class="t-2 azul-oscuro">Noticias</h2>
+
+    <div class="carrusel carrusel-noticias azul">
+      <div class="carrusel-4">
+        <!-- <div class="item">
+          <div class="box-noticia big">
+            <figure>
+              <img src="images/img-not1.jpg" alt="">
+            </figure>
+            <h4><a href="#">Consejo de Alta Dirección Pública expone en comisiones de Hacienda del Congreso sobre el estado del Sistema</a></h4>
+            <p>Importantes logros en materia de eficiencia y productividad en la gestión de los concursos, dio...</p>
+            <a href="#" class="ver-mas">Ver <img src="images/flecha-der-azul.svg" alt=""></a>
+          </div>
+        </div> -->
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not2.jpg" alt="">
+            </figure>
+            <div class="texto">
+                <h4><a href="#">#YoSirvoAmiPaísCL: Servicio Civil premia a los funcionarios públicos más destacados a nivel</a></h4>
+              <p>El Concurso recibió 165 postulaciones de 75 servicios públicos de distintas</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not3.jpg" alt="">
+            </figure>
+            <div class="texto">
+              <h4><a href="#">Presidente Sebastián Piñera nombra a Alejandra Grebe como Directora de la Dirección</a></h4>
+              <p>El Presidente Sebastian Piñera, nombró a Alejandra Grebe como directora</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not2.jpg" alt="">
+            </figure>
+            <div class="texto">
+              <h4><a href="#">#YoSirvoAmiPaísCL: Servicio Civil premia a los funcionarios públicos más destacados a nivel</a></h4>
+              <p>El Concurso recibió 165 postulaciones de 75 servicios públicos de distintas</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not3.jpg" alt="">
+            </figure>
+            <div class="texto">
+              <h4><a href="#">Presidente Sebastián Piñera nombra a Alejandra Grebe como Directora de la Dirección</a></h4>
+              <p>El Presidente Sebastian Piñera, nombró a Alejandra Grebe como directora</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not2.jpg" alt="">
+            </figure>
+            <div class="texto">
+              <h4><a href="#">#YoSirvoAmiPaísCL: Servicio Civil premia a los funcionarios públicos más destacados a nivel</a></h4>
+              <p>El Concurso recibió 165 postulaciones de 75 servicios públicos de distintas</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box-noticia">
+            <figure>
+              <img class="lazyload" data-src="images/img-not3.jpg" alt="">
+            </figure>
+            <div class="texto">
+              <h4><a href="#">Presidente Sebastián Piñera nombra a Alejandra Grebe como Directora de la Dirección</a></h4>
+              <p>El Presidente Sebastian Piñera, nombró a Alejandra Grebe como directora</p>
+              <a href="#" class="ver-mas">Ver más<img class="lazyload" data-src="images/flecha-der-azul.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cifras p-1">
+  <div class="wrap flex-between-top">
+    <div class="item-cifra wow fadeIn">
+      <h4>4.239</h4>
+      <p>Concursos de Alta Dirección Pública realizados históricamente.</p>
+    </div>
+    <div class="item-cifra wow fadeIn" data-wow-delay="0.3s">
+      <h4>515.400</h4>
+      <p>Postulaciones para concursos de Alta Dirección Pública recibidas desde 2004.</p>
+    </div>
+    <div class="item-cifra wow fadeIn" data-wow-delay="0.5s">
+      <h4>896</h4>
+      <p>Iniciativas han postulado al Concurso Funciona! desde 2014.</p>
+    </div>
+    <div class="item-cifra wow fadeIn" data-wow-delay="0.7s">
+      <h4>1.224</h4>
+      <p>Estudiantes seleccionados por el Programa Prácticas Chile.</p>
+    </div>
+  </div>
+  <div class="wrap text-center">
+    <a href="" class="btn btn-borde-blanco wow fadeInDown">Conoce más cifras en Datos Abiertos SC</a>
+  </div>
+</section>
+
+<section class="trabajar p-3">
+  <div class="wrap text-center">
+    <h2 class="t-2 blanco wow fadeIn">¿Quieres Trabajar en el Estado?</h2>
+    <p class="fadeInDown">Revisa aquí las ofertas de empleos disponibles en instituciones públicas, según tu perfil profesional y cargo de interés.</p>
+
+    <div class="carrusel blanco wow fadeInUp2">
+      <div class="carrusel-4">
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres ser Alto Directivo Público?</a>
+        </div>
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres ser Funcionario Público?</a>
+        </div>
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres ser Director de Escuela?</a>
+        </div>
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres hacer tu Práctica en el Estado?</a>
+        </div>
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres ser Alto Directivo Público?</a>
+        </div>
+        <div class="item">
+          <a href="#" class="item-trabajo">¿Quieres ser Funcionario Público?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="programas p-3">
+  <div class="wrap text-center">
+    <h5 class="t-5">Programas</h5>
+    <h2 class="t-2">Servicio Civil</h2>
+
+
+    <div class="carrusel azul con-nav flecha-1">
+      <div class="carrusel-4">
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-pro1.jpg" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-pro2.jpg" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-pro3.jpg" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-pro4.jpg" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-pro1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-celeste p-2">
+  <div class="wrap text-center">
+    <div class="carrusel azul con-nav flecha-2">
+      <div class="carrusel-4">
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-gob1.png" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-gob2.png" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-gob3.png" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-gob4.png" alt="">
+        </div>
+        <div class="item item-programa">
+          <img class="lazyload" data-src="images/logo-gob1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="p-3">
+  <div class="wrap">
+    <a href="#" class="logo-footer">
+      <img class="lazyload" data-src="images/logo-sc.png" alt="">
+    </a>
+    <div class="flex-between-top">
+      <div class="w-footer">
+        <h4>Servicio Civil</h4>
+        <ul>
+          <li><a href="#">Nuestra Institución</a></li>
+          <li><a href="#">Director Nacional del Servicio Civil</a></li>
+          <li><a href="#">Organigrama</a></li>
+          <li><a href="#">Presupuesto</a></li>
+          <li><a href="#">Nuevas Atribuciones Ley N°20.955</a></li>
+          <li><a href="#">Comité Consultivo</a></li>
+        </ul>
+      </div>
+      <div class="w-footer">
+        <h4>Enlaces de Interés</h4>
+        <a href="#" class="i-enlace"><img class="lazyload" data-src="images/ic-link.svg" alt=""> Sistema de Alta Dirección Pública</a>
+        <a href="#" class="i-enlace"><img class="lazyload" data-src="images/ic-link.svg" alt=""> Gestión y Desarrollo de Personas</a>
+        <a href="#" class="i-enlace"><img class="lazyload" data-src="images/ic-link.svg" alt=""> Consejo de Alta Dirección Pública</a>
+      </div>
+      <div class="w-footer">
+        <h4>¿Quieres Trabajar en el Estado?</h4>
+        <p>Revisa aquí las ofertas de empleos disponibles en instituciones públicas, según tu perfil profesional y cargo de interés.</p>
+        <a href="#" class="btn btn-rojo">Ingresa y postula aquí</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="redes-footer">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+
+<script src="js/tiny-slider.js" defer></script>
+<script src="js/lazyload.js" defer></script>
+<script src="js/accordion.js" defer></script>
+<script src="js/wow.js" defer></script>
+<script type="text/javascript" src="js/funciones.js" defer></script>
+<script src="js/funciones-widget.js" defer></script>
+
+</body>
+</html>

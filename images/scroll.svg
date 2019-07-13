@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="39.138" viewBox="0 0 50 39.138">
+  <g id="Grupo_1414" data-name="Grupo 1414" transform="translate(-952 -898.862)">
+    <g id="Grupo_1380" data-name="Grupo 1380" transform="translate(43 78.124)">
+      <path id="Trazado_941" data-name="Trazado 941" d="M934.124,829.5a1.044,1.044,0,0,1-.71-.278l-6.669-6.169a1.046,1.046,0,0,1,1.421-1.536l5.958,5.512,5.958-5.512a1.046,1.046,0,0,1,1.421,1.536l-6.668,6.169A1.048,1.048,0,0,1,934.124,829.5Z" fill="#fff" stroke="#9f9f9f" stroke-width="1"/>
+    </g>
+    <text id="scroll" transform="translate(977 934)" fill="#fff" font-size="18" font-family="Helvetica-Bold, Helvetica" font-weight="700"><tspan x="-24.012" y="0">scroll</tspan></text>
+  </g>
+</svg>

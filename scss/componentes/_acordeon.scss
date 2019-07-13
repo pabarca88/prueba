@@ -1,0 +1,155 @@
+// main: ../estilos.scss
+.js-accordion {
+  margin: 0 auto;
+}
+.js-accordion-title {
+  background: #f5f5f5;
+  border-top: 0;
+  cursor: pointer;
+  display: block;
+  padding: 1em .5em;
+  width: 100%;
+}
+.js-accordion-title:first-child {
+}
+.js-accordion-content {
+  border-top: 0;
+  height: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all .25s linear;
+}
+
+.ac-default{
+  button {
+    font-size: 1.25em;
+    color: $color-azul;
+    background: #E6E6E6;
+    padding: 40px 30px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0px;
+    border: none;
+    position: relative;
+    &:nth-of-type(odd) {
+      background: #E6E6E6;
+    }
+    &:nth-of-type(even) {
+      background: #F0F0F0;
+    }
+    &:after {
+      content: "\f054";
+      color: $color-azul;
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 40px;
+      top: 36%;
+    }
+    &.activo {
+      background: #D1E4F7;
+    }
+    &.activo:after {
+      content:"\f078";
+    }
+  }
+  .int-ac {
+    background: #D1E4F7;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    p {
+      padding: 20px;
+    }
+  }
+  @include respond-to(1500px){
+    button {
+      padding: 30px 30px;
+    }
+  }
+  @include respond-to(640px) {
+    button {
+      padding: 20px 40px 20px 20px;
+      font-size: 1em;
+      &:after {
+        right: 10px;
+      }
+    }
+  }
+}
+.ac-historia{
+  button {
+    font-size: 1em;
+    color: #333333;
+    padding: 20px 10px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0px;
+    border: none;
+    border-bottom: 1px solid #707070;
+    position: relative;
+    background: transparent;
+    &:after {
+      content: "\f055";
+      color: #333;
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 10px;
+      top: 32%;
+    }
+    &.activo {
+      background: #D1E4F7;
+      color: $color-azul;
+    }
+    &.activo:after {
+      content:"\f056";
+      color: $color-azul;
+    }
+  }
+  .int-ac {
+    background: #D1E4F7;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    text-align: left;
+    padding: 0px;
+    p {
+      padding: 10px 0px 0px;
+      margin-bottom: 10px;
+    }
+  }
+  @include respond-to(1500px){
+    button {
+      padding: 10px 10px;
+      &:after {
+        content: "\f055";
+        color: #333;
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 10px;
+        top: 26%;
+      }
+    }
+  }
+  @include respond-to(640px) {
+    button {
+      padding: 10px;
+      font-size: 1em;
+      &:after {
+        right: 10px;
+      }
+    }
+  }
+}
+
+.ac-default.ac-faq {
+  .item-ac {
+    margin-bottom: 10px;
+    button{
+      background: #BFDFFF;
+    }
+    .int-ac {
+      background: #BFDFFF;
+    }
+  }
+}

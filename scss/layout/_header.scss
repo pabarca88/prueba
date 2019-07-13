@@ -1,0 +1,395 @@
+// main: ../estilos.scss
+header{
+  color: #fff;
+  padding: 16px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  border-top: 6px solid $color-azul;
+  .logo{
+    img{
+      width: 170px;
+      @include respond-to(1500px) {
+          width: 115px;
+      }
+      @include respond-to(480px) {
+          width: 90px;
+      }
+    }
+  }
+  .head {
+    .head-top {
+      text-align: right;
+      a {
+        color: #fff;
+        font-weight: 300;
+        border-left: 1px solid #fff;
+        font-size: .8em;
+        line-height: 1em;
+        padding: 0 20px;
+        transition: color 0.4s;
+        opacity: 0.7;
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 4px;
+          margin-right: 4px;
+          font-size: 1.2em;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .redes-top {
+        display: inline-block;
+        margin-left: 15px;
+        a{
+          border-left: none;
+          margin-left: 0px;
+          padding:0 0 0 5px;
+          i {
+            font-size: 1em;
+          }
+        }
+      }
+      .ver-redes {
+        display: none;
+      }
+    }
+    nav {
+      margin-top: 50px;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          display: inline-block;
+          padding-left: 24px;
+          a {
+            font-size: 1em;
+            color: #fff;
+            font-weight: 500;
+            transition: color .3s ease;
+            display: block;
+            padding-bottom: 10px;
+
+            &.activo {
+              border-bottom: 3px solid $color-rojo;
+            }
+          }
+        }
+      }
+      @include respond-to(1500px){
+        margin-top: 36px;
+        ul {
+          li {
+            a {
+              padding-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &:before {
+    position: absolute;
+    background: #2C435A;
+    content: "";
+    height: 56px;
+    top: 0;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+    @include respond-to(1500px){
+      height: 46px;
+    }
+  }
+  &:after {
+    height: 6px;
+    content:"";
+    width: 26%;
+    min-width: 150px;
+    display: block;
+    background: $color-rojo;
+    top: -6px;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+  }
+  &.oculto {
+    visibility: hidden;
+    opacity: 0;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translate(0,-100%);
+        -ms-transform: translate(0,-100%);
+            transform: translate(0,-100%);
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+    &:before {
+      opacity: 1;
+      height: 4.5em;
+    }
+    .logo {
+      img {
+        width: 5.7em;
+        height: auto;
+      }
+    }
+    .head{
+      padding-right: 200px;
+      .head-top {
+        position: absolute;
+        opacity: 1;
+        right: $wrap1;
+        top: 32px;
+        transition: none;
+        a {
+          font-size: 0;
+          display: inline-block;
+          border: none;
+          padding: 0 5px;
+          transition: none;
+          i {
+            font-size: 24px;
+          }
+        }
+        .redes-top {
+          display: none;
+          position: absolute;
+        }
+        .ver-redes {
+          display: inline-block;
+          color: $color-azul;
+          font-size: .85em;
+          border-radius: 50%;
+          width: 1.6em;
+          height: 1.6em;
+          border: 1px solid $color-azul;
+          text-align: center;
+          line-height: 1.5em;
+          padding-right: 2px;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+      }
+      nav {
+        margin-top: 26px;
+        ul {
+          li {
+            a {
+              &.activo {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+      @include respond-to(1500px) {
+        padding-right: 150px;
+        .head-top{
+          right: $wrap2;
+          top: 28px;
+          a{
+            i{
+              font-size: 18px;
+            }
+          }
+        }
+        nav {
+          margin-top: 22px;
+        }
+      }
+      @include respond-to(1200px) {
+        padding-right: 160px;
+        .head-top{
+          right: $wrap3;
+          top: 28px;
+          a{
+            i{
+              font-size: 18px;
+            }
+          }
+        }
+        nav{
+          ul{
+            li{
+              padding-left: 15px;
+              a{
+                font-size: .9em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+  &.visible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    -webkit-transform: translate(0,0%);
+        -ms-transform: translate(0,0%);
+            transform: translate(0,0%);
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+  @include respond-to(1500px) {
+    padding: 12px 0;
+  }
+  @include respond-to(991px) {
+    .head{
+      position: fixed;
+      top: 0;
+      right: -350px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background: $color-azul;
+      padding: 80px 20px 20px 20px;
+      width: 300px;
+      max-width: 100%;
+      display: block;
+      visibility: visible;
+      transform: none;
+      transition: all 0.3s ease;
+      z-index: 999;
+      &.visible {
+        right: 0;
+      }
+      .head-top{
+        text-align: left;
+        opacity: 1;
+        a {
+          display: block;
+          border: none;
+          margin-bottom: 10px;
+          padding: 0;
+        }
+        .redes-top{
+          position: absolute;
+          bottom: 40px;
+          width: 150px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          @include flex-between
+          a{
+            display: inline-block;
+            font-size: 20px;
+          }
+        }
+      }
+      nav{
+        ul{
+          li{
+            display: block;
+            padding: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  &.interior.default {
+    height: 142px;
+    &:before {
+      opacity: .05;
+    }
+    background: #fff;
+    .head {
+      opacity: 1;
+      .head-top {
+        a {
+          color: $color-gris;
+        }
+      }
+      nav {
+        ul {
+          li {
+            a {
+              color: #1B7AD7;
+              &.activo {
+                color: $color-gris;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include respond-to(1500px){
+      height: 106px;
+    }
+    @include respond-to(991px){
+      background: #2C435A;
+      .head{
+        .head-top{
+          a{
+            color: #fff;
+          }
+        }
+        nav {
+          ul {
+            li {
+              a {
+                color: #fff;
+                &.activo {
+                  color: #fff;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: $wrap1;
+  z-index: 999;
+  span {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block;
+  }
+  &.open {
+    position: fixed;
+  }
+  &.open  span:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  &.open  span:nth-child(2) {
+    opacity: 0;
+  }
+  &.open  span:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  @include respond-to(991px) {
+    display: block;
+    right: $wrap3;
+  }
+  @include respond-to(640px) {
+    right: $wrap4;
+  }
+}
